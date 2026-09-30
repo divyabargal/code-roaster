@@ -1,0 +1,20 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# production / build
+/.next/
+/out/
+/build
+
+# env files
+.env.local
+.env.*.local
+
+# debug & misc
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+*.pem

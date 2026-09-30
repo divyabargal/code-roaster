@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  --color-frame: #111111;
+  --color-canvas: #F5F5F3;
+  --color-panel: #FDFDFD;
+  --color-subtle: #E6E6E2;
+  --color-accent: #D94826;
+
+  --color-fatal: #DC2626;
+  --color-smell: #D97706;
+  --color-opt: #16A34A;
+}
+
+:root {
+  --color-frame: #111111;
+  --color-canvas: #F5F5F3;
+  --color-panel: #FDFDFD;
+  --color-subtle: #E6E6E2;
+  --color-accent: #D94826;
+}
+
+/* Thin black-on-light scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #111111 #F5F5F3;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #F5F5F3;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #111111;
+  border-radius: 0px;
+}
+
+/* Drafting grid background */
+body {
+  background-color: #F5F5F3;
+  background-image: 
+    linear-gradient(to right, rgba(17, 17, 17, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(17, 17, 17, 0.05) 1px, transparent 1px);
+  background-size: 24px 24px;
+  color: #111111;
+  font-family: var(--font-jetbrains-mono), monospace;
+}
